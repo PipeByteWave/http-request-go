@@ -8,7 +8,6 @@ import (
 	"time"
 )
 
-
 func NewRequestGo[T any](method, url string, bod any, response *T) error {
 	var jsonData []byte
 	var err error
@@ -19,8 +18,7 @@ func NewRequestGo[T any](method, url string, bod any, response *T) error {
 		}
 	}
 
-	
-	req, err := http.NewRequest(method, url ,bytes.NewBuffer(jsonData))
+	req, err := http.NewRequest(method, url, bytes.NewBuffer(jsonData))
 	if err != nil {
 		return err
 	}
