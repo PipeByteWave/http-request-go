@@ -1,4 +1,4 @@
-module github.com/PipeByteWave/go-http-client
+module github.com/PipeByteWave/http-request-go
 
 go 1.24.0
 
